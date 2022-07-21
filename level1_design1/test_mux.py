@@ -2,21 +2,33 @@
 
 import cocotb
 from cocotb.triggers import Timer
+import random
 
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
 
     cocotb.log.info('##### CTB: Develop your test here ########')
+    initial begin
 
+    a=4’b1010;
+
+    s=2’b00;
+
+
+    s=2’b01;
+
+#10 s=2’b10;
+
+#10 s=2’b11;
+
+#10 $stop;
 
 # See LICENSE.cocotb for details
 # See LICENSE.vyoma for details
 
-# Simple tests for an adder module
-import cocotb
-from cocotb.triggers import Timer
-import random
+
+
 
 @cocotb.test()
 async def adder_basic_test(dut):
